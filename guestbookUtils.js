@@ -10,9 +10,15 @@ const forGuestbook = (guestbook) => ({
       "\nGuestbook logs:\n",
     );
 
+    if (logs.length === 0) {
+      console.log(chalk.italic(chalk.grey(
+        `  (No one has signed the guestbook yet!)`
+      )));
+    }
+
     for (const { from, contents } of logs.slice(-amount)) {
       console.log(
-        `  ${from} writes:\n  ${chalk.bold(`"${contents}"`)}`
+        `  ${from} writes:\n    ${chalk.bold(`"${contents}"`)}`
       );
     }
     console.log("");
