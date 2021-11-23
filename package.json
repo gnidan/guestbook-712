@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.3.3",
+    "chalk": "^4.1.2"
+  }
+}
