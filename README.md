@@ -15,6 +15,15 @@ It contains the following core components:
 - [`guestbookUtils.js`](https://github.com/gnidan/guestbook-712/blob/master/guestbookUtils.js)
     helpers for performing signature operations for a given deployed `Guestbook`
 
+### Notes about this Truffle project
+
+- There's no `Migrations.sol`. Yep, that file is completely optional.
+- Compiler version is specified as `version: "pragma"`. Did you know you could
+  do that? :smile:
+- Ignore the weird RPC URL. No secret unreleased features here. :shushing_face:
+- The `console:` section in `truffle-config.js` is recent new functionality.
+  Pretty handy!
+
 ## `Guestbook` contract
 
 Aggregates signed log entries. This contract defines an EIP-712 schema and
