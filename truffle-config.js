@@ -1,10 +1,5 @@
 module.exports = {
   networks: {
-    development: {
-      // `truffle dashboard` url
-      url: "http://localhost:5000/rpc",
-      network_id: "*"
-    }
   },
 
   console: {
